@@ -2,10 +2,76 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI";
+  font-family: "Merriweather", serif;
 }
 
 body {
   background-color: #f5ecd7;
-  color: #4b3a1c;
+  color: #362914;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-cont {
+  width: 1200px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 90vh;
+  border: 1px solid #362914;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px 0 rgba(75, 58, 28, 0.18),
+    0 1.5px 4px 0 rgba(75, 58, 28, 0.1);
+  padding: 2rem;
+}
+.header {
+  font-size: 3rem;
+  font-weight: 200;
+}
+.search-cont {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: #362914 1px solid;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+.search-input {
+  box-shadow: 0 8px 32px 0 rgba(75, 58, 28, 0.18),
+    0 1.5px 4px 0 rgba(75, 58, 28, 0.1);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #362914;
+  border-radius: 50px;
+  width: 500px;
+}
+.search-button {
+  right: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: -3rem;
+}
+.result-cont {
+  overflow-y: auto;
+}
+.concept {
+  font-size: 2rem;
+}
+.category {
+  opacity: 0.6;
+}
+.definition {
+  margin: 1rem 0;
+}
+.definition i {
+  font-size: 2rem;
 }
